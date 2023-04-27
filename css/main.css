@@ -1,12 +1,24 @@
 /* Estilos generales */
+*{
+  font-family: 'Nunito', serif;
+  margin:0;
+  padding:0;
+}
 
-body,html {
-  height: 100%;
-  }
+/* inicio */
+
+button{
+  border:3px solid white;
+  background-color: transparent;
+  padding: 6px 8px;
+  color:white;
+}
   /* Header */
-  
   header {
     text-shadow: 4px 4px 8px grey;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top:1rem;
   }
   
   header #menuf1{
@@ -16,17 +28,15 @@ body,html {
     justify-content: space-between;
   }
   header #menuf1_columna_izquierda{
-    padding-left: 1rem;
   }
   header #menuf1_columna_derecha{
-    padding-right: 1rem;
   }
   .sticky {
     position: sticky;
     top: 0;
     width = 100%;
     background-color: rgba(255, 255, 255, 0.8);
-
+    z-index:4;
   }
   
   .contenedor{
@@ -35,28 +45,72 @@ body,html {
   }
 
   main {
-    padding: 20px;
-    border-width: 5px;
     background-color: rgba(255, 255, 255, 0.3);
-    width=70%;
+    display:flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: center;
+    align-content: flex-start;
   }
+ section{
+  z-index:1;
+  position:relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+  .seccion1{
+    background-image: url(../img/Home01A.jpg);
+    color:white;
+  }
+  .seccion2{
+    background-image: url(../img/Home02A.jpg);
+    color:black;
+    background-attachment: fixed;
+  }
+  .seccion-fondo{
+    opacity: 0.44;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display:block;
+    z-index:2;
+  }
+  .seccion-fondo1{
+    background-color: black;
+  }
+  .seccion-fondo2{
+    background-color: white;
+  }
+  .seccion-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    min-height: 700px;
+    z-index:3;
+    padding: 1rem 4rem 1rem 4rem;
+  }
+ 
   aside{
     width:30%;
-    border: 1px solid black;
+    border-radius: 0.5rem;
     padding:1rem;
+    box-shadow: 0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3),
+                0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3),
+                inset 0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3),
+                inset 0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3);
   }
   
-  section {
-    margin-bottom: 40px;
-  }
-  
- 
   /* Formulario de contacto */
-  
   form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
     margin: 0 auto;
   }
   
@@ -81,7 +135,6 @@ body,html {
   }
   
   /* Footer */
-  
   footer {
     border-width: 5px;
     background-color: rgba(211, 211, 211, 0.363);
