@@ -26,6 +26,13 @@ button:hover {
     padding-right: 5rem;
     padding-top:1rem;
   }
+  .enlace{
+    position: absolute;
+    padding: 20px 50px;
+  }
+  .logo{
+    height: 40px;
+  }
   
   header #menuf1{
     display:flex;
@@ -37,6 +44,9 @@ button:hover {
   }
   header #menuf1_columna_derecha{
   }
+
+  
+
   .sticky {
     position: sticky;
     top: 0;

@@ -10,6 +10,8 @@ document.getElementById("idHeader").innerHTML = `
 <nav class="menuf2 navbar navbar-expand-lg navbar-light">
 <div class="container-fluid">
   <a class="navbar-brand" href="#">Broker</a>
+  <a href="#" class="Enlace">
+        <img src="logo1.jpg" alt="" class="logo">
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,10 +28,10 @@ document.getElementById("idHeader").innerHTML = `
           Planes
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="planes.html">Plan 1</a></li>
-          <li><a class="dropdown-item" href="planes.html">Plan 2</a></li>
+          <li><a class="dropdown-item" href="planes.html">Básico</a></li>
+          <li><a class="dropdown-item" href="planes.html">Familiar</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="planes.html">Otro plan</a></li>
+          <li><a class="dropdown-item" href="planes.html">Personalizá tu plan</a></li>
         </ul>
       </li>
       <li class="nav-item">
