@@ -19,6 +19,10 @@ button:hover {
       transition: 0.7s;
 }
 
+button:hover a{
+  transform: scale(1,2);
+}
+
   /* Header */
   header {
     text-shadow: 4px 4px 8px grey;
@@ -26,13 +30,7 @@ button:hover {
     padding-right: 5rem;
     padding-top:1rem;
   }
-  .enlace{
-    position: absolute;
-    padding: 20px 50px;
-  }
-  .logo{
-    height: 40px;
-  }
+  
   
   header #menuf1{
     display:flex;
@@ -40,9 +38,20 @@ button:hover {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
   header #menuf1_columna_izquierda{
   }
   header #menuf1_columna_derecha{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .collapse navbar-nav me-auto mb-2 mb-lg-0{
+    display: inline-block;
+    justify-content: center;
+    
   }
 
   
@@ -58,6 +67,21 @@ button:hover {
   .contenedor{
     display:flex;
     flex-direction: row;
+  }
+  .container-logo{
+    margin-left: 30px;
+  }
+
+  .container-logo h2{
+    color:rgba(16, 6, 47)
+    font-weight: 400;
+    font: size 65px;
+    letter-spacing: 2px;
+  }
+
+  .container-logo h2 span{
+    color:rgb(2, 2, 44);
+    font-weight: 700;
   }
 
   main {
@@ -121,6 +145,8 @@ button:hover {
                 0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3),
                 inset 0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3),
                 inset 0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3);
+
+    
   }
   
   /* Formulario de contacto */

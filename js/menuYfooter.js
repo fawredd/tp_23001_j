@@ -7,11 +7,13 @@ document.getElementById("idHeader").innerHTML = `
     <i class="fa-brands fa-whatsapp fa-bounce"></i>
 </div>
 </div>
+
 <nav class="menuf2 navbar navbar-expand-lg navbar-light">
 <div class="container-fluid">
-  <a class="navbar-brand" href="#">Broker</a>
-  <a href="#" class="Enlace">
-        <img src="logo1.jpg" alt="" class="logo">
+  <div class="container-logo">
+     <h2><span>Broker</span>.Ar</h2>
+  
+  
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
