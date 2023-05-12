@@ -1,20 +1,20 @@
-document.getElementById("idHeader").innerHTML = `
+var header=
+`
 <div id="menuf1">
 <div id="menuf1_columna_izquierda"><i class="fa-solid fa-phone"></i> +54 11 5555-5555</div>
 <div id="menuf1_columna_derecha">
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-instagram fa-shake"></i>
-    <i class="fa-brands fa-whatsapp fa-bounce"></i>
+  <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20saber%20más%20sobre%20los%20planes%20de%20medicina%20prepaga" target="_blank"><i class="fab fa-whatsapp"></i> 
+  <a href="https://www.facebook.com/tubroker" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/tubroker" target="_blank"><i class="fab fa-instagram"></i></a>
 </div>
 </div>
 
 <nav class="menuf2 navbar navbar-expand-lg navbar-light">
 <div class="container-fluid">
   <div class="container-logo">
-     <h2><span>Broker</span>.Ar</h2>
-  
-  
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <h2><span>Brocker</span><span>.</span>Ar
+    
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,6 +44,7 @@ document.getElementById("idHeader").innerHTML = `
 </div>
 </nav>
 `;
+document.getElementById("idHeader").innerHTML=header
 // Busco que el menu quede siempre visible
 window.onscroll = function() {siempreVisible()};
 var header = document.getElementById("idHeader");
