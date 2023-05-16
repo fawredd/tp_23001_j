@@ -1,4 +1,4 @@
-var header=
+var cad=
 `
 <div id="menuf1">
 <div id="menuf1_columna_izquierda"><i class="fa-solid fa-phone"></i> +54 11 5555-5555</div>
@@ -44,7 +44,23 @@ var header=
 </div>
 </nav>
 `;
-document.getElementById("idHeader").innerHTML=header
+document.getElementById("idHeader").innerHTML=cad;
+
+cad=`
+  <div class="redes-sociales">
+        <!-- Boton de whatsapp -->
+        <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20saber%20más%20sobre%20los%20planes%20de%20medicina%20prepaga" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chatea con nosotros por WhatsApp</a>
+        <!-- fin boton whatsapp -->
+        <a href="https://www.facebook.com/tubroker" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/tubroker" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/tubroker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/tubroker" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2023 Broker de Medicina Prepaga en Argentina</p>
+    </footer>
+  </div>
+  `;
+  document.getElementById("idFooter").innerHTML=cad;
 // Busco que el menu quede siempre visible
 window.onscroll = function() {siempreVisible()};
 var header = document.getElementById("idHeader");
