@@ -11,9 +11,10 @@ var cad=
 
 <nav class="menuf2 navbar navbar-expand-lg navbar-light">
 <div class="container-fluid">
-  <div class="container-logo">
-     <h2><span>Brocker</span><span>.</span>Ar
-    
+ <div class="container-logo">
+ <div class="logo">
+   src=(../img/logobrocker.jpg);
+  <h2>Brocker.Ar</h2>  
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
