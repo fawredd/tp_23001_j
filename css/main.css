@@ -3,28 +3,30 @@
   font-family: 'Nunito', serif;
   margin:0;
   padding:0;
+  box-sizing: border-box;
 }
 
 /* inicio */
-
-button{
-  border:3px solid white;
-  background-color: transparent;
-  padding: 6px 8px;
-  color:white;
-}
-button:hover {
-      background-color:blue;
-      border: 3px solid blue;
-      transition: 0.7s;
+body{
+  position:relative;
 }
 
-  /* Header */
+/* Header */
   header {
-    text-shadow: 4px 4px 8px grey;
+    position: sticky;
+    top: 0;
+    left:0;
+    width: 100%;
+     /* text-shadow: 4px 4px 8px grey; */
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top:1rem;
+    background: rgba(128, 128, 128, 0.5);
+    color:white;
+    border-style: solid;
+    border-color: #184f63;
+    border-width: thin;
+    z-index:4;
   }
   
   header #menuf1{
@@ -33,15 +35,24 @@ button:hover {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
+  header .navbar-brand,header .nav-link{
+    color:white !important;
+  }
+  
   header #menuf1_columna_izquierda{
   }
-  header #menuf1_columna_derecha{
+  header #menuf1_columna_derecha a{
+    padding-left:8px;
   }
+
   .sticky {
     position: sticky;
     top: 0;
-    width = 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    left:0;
+    width: 100%;
+    background-color: #154455;
+    transition: 0.7s;
     z-index:4;
   }
   
@@ -51,6 +62,7 @@ button:hover {
   }
 
   main {
+    margin-top:-100px;
     background-color: rgba(255, 255, 255, 0.3);
     display:flex;
     flex-direction: column;
@@ -66,13 +78,27 @@ button:hover {
   background-size: cover;
  }
   .seccion1{
-    background-image: url(../img/Home01A.jpg);
+    background-image: url(../img/Home01C.jpg);
     color:white;
   }
   .seccion2{
-    background-image: url(../img/Home02A.jpg);
+    background-image: url(../img/Home04A.jpg);
     color:black;
     background-attachment: fixed;
+  }
+  .seccion3{
+    background-image: url(../img/Home01E.jpg);
+    filter: sepia(100%) hue-rotate(160deg);
+    color:white;
+  }
+  .seccion4{
+    background-image: url(../img/Home02A.jpg);
+    /*filter: sepia(100%) hue-rotate(160deg);*/
+    color:white;
+  }
+  .seccion1-pf{
+    background-image: url(../img/Home01C.jpg);
+    color:white;
   }
   .seccion-fondo{
     opacity: 0.44;
@@ -95,75 +121,271 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    min-height: 700px;
+    min-height: calc(100vh - 5rem); /*le resto el espacio-top*/
     z-index:3;
     padding: 1rem 4rem 1rem 4rem;
+    width:100%;
   }
- 
-  aside{
-    width:30%;
-    border-radius: 0.5rem;
-    padding:1rem;
-    box-shadow: 0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3),
-                0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3),
-                inset 0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3),
-                inset 0 0 0.15rem 0.2rem rgba(211, 211, 211, 0.3);
+
+  .fila{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width:100%;
+  }
+
+  .seccion-contenido .col1{
+    max-width: 45%;
   }
   
+  .seccion-contenido .col2{
+    display:flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding: 1rem 4rem 1rem 4rem;
+    max-width: 55%;
+  }
+  
+  .listado-proveedores{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index:3;
+  }
+
+  .espacio-top{
+    padding-top:5.5rem;
+  }
+  .seccion-contenido h1,.seccion-contenido h3{
+    color:white;
+    font-weight:bold;
+  }
+
+  .seccion-contenido h3{
+    margin-top:2rem;
+    color:#154455;
+    font-weight:bold;
+  }
+
+  .plan{
+    margin:1rem 4rem;
+    padding: 1rem 4rem;
+    background-color:#15445580;
+    font-size:1.5rem;
+  }
+
+  .formulario-contenido{
+    width:100%;
+    border:solid thin white;
+    border-radius: 20px;
+    padding:5rem;
+  }
+
+  .form-cont-header{
+    border-radius: 1rem;
+    background-color:rgba(128, 128, 128, 0.70);
+    text-align:center;
+    vertical-align: middle;
+    padding:0.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-cont-header h2{
+    margin-bottom: 0;
+  }
+
+  .accordion-item{
+    background-color: rgba(255, 255, 255, 0.70);
+  }
+
+  .accordion-body{
+    color:black;
+    
+  }
+ 
   /* Formulario de contacto */
   form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
   }
-  
-  form label {
-    margin-bottom: 10px;
+
+  form input{
+    margin-bottom:1rem;
   }
   
-  form input,
-  form textarea {
-    padding: 5px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  /*-------Tarjetas---------------*/
+  .flip-card {
+    margin: 1rem;
+    background-color: transparent;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Efecto 3D */
   }
   
-  form button[type="submit"] {
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+  /* Contenedor para posicionar el frente y el dorso */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
   }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    color: black;
+    padding: 0rem 0.2rem 0rem 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:rgba(128, 128, 128, 0.70);
+    color: #026488;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .flip-card-front img, .flip-card-back img{
+    width:100%;
+  }
+  .flip-card-front p, .flip-card-back p{
+    margin:0;
+  }
+  .flip-card-back h3{
+    color:#026488;
+    margin:0;
+  }
+
+  /* -------------------------------- */
   
   /* Footer */
   footer {
     border-width: 5px;
-    background-color: rgba(211, 211, 211, 0.363);
+    background-color:#154455;
     padding: 20px;
     text-align: center;
+    color:white;
   }
-  
+
+  footer a{
+    padding-left:10px;
+  }
+
+  i.fab{
+    color:white;
+  }
+
+  a {
+    text-decoration: none;
+    color:white;
+  }
+
+  a:hover{
+    background-color: grey ;
+    text-shadow: 4px 4px 8px hwb(0 21% 79% / 0.40);
+  }
+
+  button{
+    border:3px solid white;
+    background-color: transparent;
+    padding: 6px 8px;
+    color:white;
+  }
+  button:hover {
+        background-color:blue;
+        border: 3px solid blue;
+        transition: 0.7s;
+  }
+
   @media (max-width: 400px) {
     /* Estilos para celulares */
-    body {
+    .seccion-contenido .col1{
+      max-width: 100%;
+    }
+    
+    .seccion-contenido .col2{
+      display:flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      padding: 1rem 4rem 1rem 4rem;
+      max-width: 100%;
     }
   }
   
   @media (max-width: 600px) {
     /* Estilos para tablets y celulares */
-    body {
+    .seccion-contenido .col1{
+      max-width: 100%;
     }
-  }
+    
+    .seccion-contenido .col2{
+      display:flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      padding: 1rem 4rem 1rem 4rem;
+      max-width: 100%;
+    } 
+   }
 
   @media (max-width: 768px) {
     /* Estilos para pcs */
-    body {
-    }
     header h1 {
       font-size: 1.25rem;
     }

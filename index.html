@@ -10,21 +10,6 @@
       <title>Broker de Medicina Prepaga en Argentina - Inicio</title>
       <meta name="description" content="Bienvenido al broker de medicina prepaga en Argentina. Aquí encontrarás planes de salud para ti y tu familia con la mejor cobertura.">
       <meta name="keywords" content="medicina prepaga, planes de salud, cobertura médica">
-       <!-- Etiquetas de datos estructurados -->
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Broker de Medicina Prepaga en Argentina",
-          "url": "https://www.brokermedicinaprepaga.com",
-          "logo": "https://www.brokermedicinaprepaga.com/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "0800-123-4567",
-            "contactType": "customer service"
-          }
-        }
-      </script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- FontAwesome -->
       <script src="https://kit.fontawesome.com/0f1907ba90.js" crossorigin="anonymous"></script>
@@ -46,36 +31,41 @@
     <main class="main">
       <section class="seccion1">
         <div class="seccion-fondo seccion-fondo1"></div>
+        <div class="espacio-top"></div>
         <div class="seccion-contenido">
-          <h1 style="color:white;font-weight:bold;">Bienvenido al broker de medicina prepaga en Argentina</h2>
-          <p style="font-size:2rem;width:70%;text-align: center;">En nuestro broker encontrarás planes de salud para ti y tu familia con la mejor cobertura.<br/>
-             Nuestros servicios se adaptan a tus necesidades y presupuesto.</p>
-          <p>Contamos con una amplia red de proveedores médicos en todo el país, para garantizarte acceso a atención médica de calidad donde quiera que estés.</p>
-          <button>Contacta a uno de nuestros asesores para obtener más información.</button>
+          <h1>Bienvenido al broker de medicina prepaga en Argentina</h2>
+          <div class="fila">
+            <div class="col1">
+              <img src="img/imagen_columna.png" alt="Imagen">
+            </div>
+            <div class="col2">
+              <p>En nuestro broker encontrarás planes de salud para ti y tu familia con la mejor cobertura.</p>
+              <p>Nuestros servicios se adaptan a tus necesidades y presupuesto.</p>
+              <p>Contamos con una amplia red de proveedores médicos en todo el país, para garantizarte acceso a atención médica de calidad donde quiera que estés.</p>
+              <button onclick="window.location.href='contacto.html';">Contacta a uno de nuestros asesores para obtener más información.</button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="seccion2">
         <div class="seccion-fondo seccion-fondo2"></div>
-        <div class="seccion-contenido">
-          <h1>FINANCIAMIENTO</h1>
+        <div class="seccion-contenido" style="justify-content:flex-start;">
+          <h3>Nuestros proveedores</h3>
+          <div class="listado-proveedores" id="listado-proveedores">
+          
+            <proveedor v-for="prov of listado" :prov="prov"></proveedor>
+
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="redes-sociales">
-        <!-- Boton de whatsapp -->
-        <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20saber%20más%20sobre%20los%20planes%20de%20medicina%20prepaga" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chatea con nosotros por WhatsApp</a>
-        <!-- fin boton whatsapp -->
-        <a href="https://www.facebook.com/tubroker" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/tubroker" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/company/tubroker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/tubroker" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-      <p>&copy; 2023 Broker de Medicina Prepaga en Argentina</p>
+    <footer id="idFooter">
     </footer>
   </div>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="js/proveedores.js"></script>
     <script src="js/menuYfooter.js"></script>
   </body>
 </html>
