@@ -11,27 +11,17 @@
       <meta name="description" content="Bienvenido al broker de medicina prepaga en Argentina. Aquí encontrarás planes de salud para ti y tu familia con la mejor cobertura.">
       <meta name="keywords" content="medicina prepaga, planes de salud, cobertura médica">
        <!-- Etiquetas de datos estructurados -->
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Broker de Medicina Prepaga en Argentina",
-          "url": "https://www.brokermedicinaprepaga.com",
-          "logo": "https://www.brokermedicinaprepaga.com/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "0800-123-4567",
-            "contactType": "customer service"
-          }
-        }
-      </script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/main.css">
-      <!--  
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h+aKmbnecLzU6wLpKISlkaSf40pX31P3J3gU2" crossorigin="anonymous">
-      <link rel="stylesheet" href="style.css">
-      -->
+      <!-- FontAwesome -->
       <script src="https://kit.fontawesome.com/0f1907ba90.js" crossorigin="anonymous"></script>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <!-- Nuestro CSS -->
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+      
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -39,26 +29,85 @@
     <![endif]-->
     <header id="idHeader">
     </header>
-    <main>
-      <section>
-        <h2>Bienvenido al broker de medicina prepaga en Argentina</h2>
-        <p>En nuestro broker encontrarás planes de salud para ti y tu familia con la mejor cobertura. Nuestros servicios se adaptan a tus necesidades y presupuesto.</p>
-        <p>Contamos con una amplia red de proveedores médicos en todo el país, para garantizarte acceso a atención médica de calidad donde quiera que estés.</p>
-        <button>Contacta a uno de nuestros asesores para obtener más información.</button>
+    <main class="main">
+      <section class="seccion1-pf">
+        <div class="seccion-fondo seccion-fondo1"></div>
+        <div class="espacio-top"></div>
+        <div class="seccion-contenido">
+          
+          <div class="accordion w-100" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Qué es una medicina prepaga?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  La medicina prepaga es un tipo de servicio de salud privado que se brinda a través de una compañía de seguros. Los usuarios pagan una cuota mensual o anual para tener acceso a una variedad de servicios médicos, que pueden incluir consultas con especialistas, exámenes médicos, hospitalización y cirugía.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Cuál es la diferencia entre una medicina prepaga y un seguro médico?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Aunque los términos a menudo se usan indistintamente, hay algunas diferencias clave entre los seguros médicos y las medicinas prepagas. Los seguros médicos generalmente cubren una porción de los costos médicos después de que se paga un deducible. Las medicinas prepagas, por otro lado, suelen cubrir todos los costos médicos incluidos en el plan, sin deducibles ni copagos.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Qué servicios están incluidos en una medicina prepaga?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Los servicios incluidos en una medicina prepaga pueden variar según el plan y la compañía de seguros. Sin embargo, algunos servicios comunes incluyen consultas con médicos de atención primaria y especialistas, exámenes médicos, hospitalización, cirugía y medicamentos recetados.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  ¿Qué pasa si necesito un servicio que no está incluido en mi plan de medicina prepaga?
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Si necesita un servicio médico que no está incluido en su plan de medicina prepaga, es posible que deba pagar por el servicio de su propio bolsillo. Sin embargo, algunas compañías de seguros ofrecen planes que incluyen cobertura para servicios adicionales, como terapia física o psicológica.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  ¿Puedo cancelar mi plan de medicina prepaga en cualquier momento?
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  En general, puede cancelar su plan de medicina prepaga en cualquier momento, pero es posible que deba pagar una tarifa de cancelación o cumplir con un período de aviso previo. Asegúrese de revisar los términos y condiciones de su plan para obtener más información.
+                </div>
+              </div>
+            </div>
+          
+          </div>
+             
+        </div>
       </section>
     </main>
-    <footer>
-      <div class="redes-sociales">
-        <!-- Boton de whatsapp -->
-        <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20saber%20más%20sobre%20los%20planes%20de%20medicina%20prepaga" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chatea con nosotros por WhatsApp</a>
-        <!-- fin boton whatsapp -->
-        <a href="https://www.facebook.com/tubroker" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/tubroker" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/company/tubroker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/tubroker" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-      <p>&copy; 2023 Broker de Medicina Prepaga en Argentina</p>
+    <footer id="idFooter">
     </footer>
+  </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/menuYfooter.js"></script>
   </body>
 </html>
         

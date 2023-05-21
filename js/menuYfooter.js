@@ -1,12 +1,13 @@
 document.getElementById("idHeader").innerHTML = `
 <div id="menuf1">
-<div id="menuf1_columna_izquierda"><i class="fa-solid fa-phone"></i> +54 11 5555-5555</div>
-<div id="menuf1_columna_derecha">
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-instagram fa-shake"></i>
-    <i class="fa-brands fa-whatsapp fa-bounce"></i>
-</div>
-</div>
+  <div id="menuf1_columna_izquierda"><a href="tel:+54115555-5555"><i class="fa-solid fa-phone"></i> +54 11 5555-5555</a></div>
+    <div id="menuf1_columna_derecha">
+      <a href="https://www.facebook.com/tubroker" target="_blank"><i class="fab fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/tubroker" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/tubroker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/tubroker" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
 <nav class="menuf2 navbar navbar-expand-lg navbar-light">
 <div class="container-fluid">
   <a class="navbar-brand" href="#">Broker</a>
@@ -16,7 +17,7 @@ document.getElementById("idHeader").innerHTML = `
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="preguntas-frecuentes.html">Preguntas frecuentes</a>
@@ -26,10 +27,8 @@ document.getElementById("idHeader").innerHTML = `
           Planes
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="planes.html">Plan 1</a></li>
-          <li><a class="dropdown-item" href="planes.html">Plan 2</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="planes.html">Otro plan</a></li>
+          <li><a class="dropdown-item" href="planes.html#plan1">Plan 1</a></li>
+          <li><a class="dropdown-item" href="planes.html#plan2">Plan 2</a></li>
         </ul>
       </li>
       <li class="nav-item">
@@ -51,3 +50,16 @@ function siempreVisible() {
     header.classList.remove("sticky");
   }
 }
+
+document.getElementById("idFooter").innerHTML = `
+<div class="redes-sociales">
+  <!-- Boton de whatsapp -->
+  <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20saber%20más%20sobre%20los%20planes%20de%20medicina%20prepaga" target="_blank"><i class="fab fa-whatsapp"></i>Chatea con nosotros por WhatsApp</a>
+  <!-- fin boton whatsapp -->
+  <a href="https://www.facebook.com/tubroker" target="_blank"><i class="fab fa-brands fa-facebook"></i></a>
+  <a href="https://twitter.com/tubroker" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/company/tubroker" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.instagram.com/tubroker" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+<p>&copy; 2023 Broker de Medicina Prepaga en Argentina</p>
+`;
