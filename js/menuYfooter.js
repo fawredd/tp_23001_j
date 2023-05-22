@@ -17,14 +17,14 @@ document.getElementById("idHeader").innerHTML = `
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+        <a class="nav-link" href="preguntas-frecuentes.html"><i class="fa-solid fa-person-circle-question"></i>Preguntas</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Planes
+        <i class="fa-regular fa-newspaper"></i>Planes
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="planes.html#plan1">Plan 1</a></li>
@@ -32,7 +32,7 @@ document.getElementById("idHeader").innerHTML = `
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contacto.html">Contáctanos</a>
+        <a class="nav-link" href="contacto.html"><i class="fa-solid fa-at""></i>Contáctanos</a>
       </li>
     </ul>
     </div>
@@ -54,7 +54,7 @@ function siempreVisible() {
 document.getElementById("idFooter").innerHTML = `
 <div class="redes-sociales">
   <!-- Boton de whatsapp -->
-  <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20saber%20más%20sobre%20los%20planes%20de%20medicina%20prepaga" target="_blank"><i class="fab fa-whatsapp"></i>Chatea con nosotros por WhatsApp</a>
+  <a href="https://wa.me/5491123456789?text=Hola,%20quiero%20saber%20más%20sobre%20los%20planes%20de%20medicina%20prepaga" target="_blank"><i class="fab fa-whatsapp"></i></a>
   <!-- fin boton whatsapp -->
   <a href="https://www.facebook.com/tubroker" target="_blank"><i class="fab fa-brands fa-facebook"></i></a>
   <a href="https://twitter.com/tubroker" target="_blank"><i class="fab fa-twitter"></i></a>
