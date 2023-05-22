@@ -170,7 +170,7 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
     position: relative;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 4rem 1rem 4rem;
   }
 
   .espacio-top{
