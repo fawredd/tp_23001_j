@@ -407,6 +407,9 @@ body{
   .seccion3 {
     background-position-x: -400px;
   }
+  .formulario-contenido{
+    padding: 0.5rem;
+  }
   
 }
   
@@ -447,6 +450,9 @@ body{
   .seccion3 {
     background-position-x: -400px;
   }
+  .formulario-contenido{
+    padding: 0.5rem;
+  }
   
    }
 
@@ -478,5 +484,8 @@ body{
     .seccion-contenido{
       min-height: calc(100vh - 270px); /*le resto el espacio-top y le sumo el margen top de main*/
       padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+    .formulario-contenido{
+      padding: 1rem;
     }
   }
