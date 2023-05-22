@@ -11,7 +11,7 @@ body{
   position:relative;
 }
 
-/* Header */
+/* ------ Header ---------------- */
   header {
     position: sticky;
     top: 0;
@@ -55,6 +55,13 @@ body{
     transition: 0.7s;
     z-index:4;
   }
+
+  ul i{
+    color: #ffffff;
+    margin-right:0.2rem;
+  }
+
+  /* ------------------------------------ */
   
   .contenedor{
     display:flex;
@@ -62,7 +69,7 @@ body{
   }
 
   main {
-    margin-top:-100px;
+    margin-top: -100px;
     background-color: rgba(255, 255, 255, 0.3);
     display:flex;
     flex-direction: column;
@@ -70,6 +77,7 @@ body{
     justify-content: center;
     align-content: flex-start;
   }
+
  section{
   z-index:1;
   position:relative;
@@ -88,7 +96,7 @@ body{
   }
   .seccion3{
     background-image: url(../img/Home01E.jpg);
-    filter: sepia(100%) hue-rotate(160deg);
+    /*filter: sepia(100%) hue-rotate(160deg);*/
     color:white;
   }
   .seccion4{
@@ -116,16 +124,17 @@ body{
   .seccion-fondo2{
     background-color: white;
   }
+  .seccion-fondo3{
+    background-color: grey;
+  }
   .seccion-contenido{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
     position: relative;
-    min-height: calc(100vh - 5rem); /*le resto el espacio-top*/
+    min-height: calc(100vh - 100px); /*le resto el espacio-top y le sumo el margen top de main*/
     z-index:3;
     padding: 1rem 4rem 1rem 4rem;
     width:100%;
@@ -137,28 +146,45 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
     position: relative;
     width:100%;
   }
 
   .seccion-contenido .col1{
     max-width: 45%;
-  }
-  
-  .seccion-contenido .col2{
     display:flex;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
     position: relative;
-    padding: 1rem 4rem 1rem 4rem;
+    overflow:hidden
+  }
+  
+  .seccion-contenido .col2{
     max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .espacio-top{
+    padding-top:100px;
+  }
+  .seccion-contenido h1,.seccion-contenido h3{
+    color:white;
+    font-weight:bold;
+    font-size: 1.375rem;
+  }
+
+  .col1 img{
+    width:100%;
+    border-radius: 1rem;
   }
   
   .listado-proveedores{
@@ -168,24 +194,8 @@ body{
     align-items:center;
     justify-content:space-around;
     flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
     position: relative;
     z-index:3;
-  }
-
-  .espacio-top{
-    padding-top:5.5rem;
-  }
-  .seccion-contenido h1,.seccion-contenido h3{
-    color:white;
-    font-weight:bold;
-  }
-
-  .seccion-contenido h3{
-    margin-top:2rem;
-    color:#154455;
-    font-weight:bold;
   }
 
   .plan{
@@ -193,26 +203,6 @@ body{
     padding: 1rem 4rem;
     background-color:#15445580;
     font-size:1.5rem;
-  }
-
-  .formulario-contenido{
-    width:100%;
-    border:solid thin white;
-    border-radius: 20px;
-    padding:5rem;
-  }
-
-  .form-cont-header{
-    border-radius: 1rem;
-    background-color:rgba(128, 128, 128, 0.70);
-    text-align:center;
-    vertical-align: middle;
-    padding:0.3rem;
-    margin-bottom: 2rem;
-  }
-
-  .form-cont-header h2{
-    margin-bottom: 0;
   }
 
   .accordion-item{
@@ -224,17 +214,41 @@ body{
     
   }
  
-  /* Formulario de contacto */
+  /*---------- Formulario de contacto----------- */
   form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
   }
 
-  form input{
+  form input,form textarea{
     margin-bottom:1rem;
   }
+
+  .formulario-contenido{
+    width:100%;
+    border:solid thin white;
+    border-radius: 1rem;
+    padding:1rem 2rem;
+  }
+
+  .form-cont-header{
+    /*border-radius: 1rem;*/
+    /*background-color:rgba(128, 128, 128, 0.70);*/
+    text-align:center;
+    vertical-align: middle;
+    padding:0.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-cont-header h2{
+    margin-bottom: 0;
+  }
+  /* ------------------------------------*/
   
+
+
+
   /*-------Tarjetas---------------*/
   .flip-card {
     margin: 1rem;
@@ -269,7 +283,7 @@ body{
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
+  /* Estilo de tarjeta frontal */
   .flip-card-front {
     background-color: white;
     color: black;
@@ -280,7 +294,7 @@ body{
     overflow:hidden;
   }
   
-  /* Style the back side */
+  /* Estilo de tarjeta fondo */
   .flip-card-back {
     background-color:rgba(128, 128, 128, 0.70);
     color: #026488;
@@ -312,10 +326,18 @@ body{
     color:white;
   }
 
-  footer a{
-    padding-left:10px;
+  .redes-sociales a{
+    padding:0.2rem 0.5rem;
   }
 
+  .redes-sociales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+  }
+/* ------------------ */
   i.fab{
     color:white;
   }
@@ -344,49 +366,103 @@ body{
 
   @media (max-width: 400px) {
     /* Estilos para celulares */
-    .seccion-contenido .col1{
-      max-width: 100%;
+    header {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+    }
+    .col1{
+      min-width:90vw;
     }
     
-    .seccion-contenido .col2{
-      display:flex;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      margin-right: auto;
-      margin-left: auto;
-      position: relative;
-      padding: 1rem 4rem 1rem 4rem;
-      max-width: 100%;
+    .col2{
+      min-width: 90vw;
     }
+    main {
+      margin-top:-270px;
   }
+  .espacio-top{
+    padding-top:270px;
+  }
+  .seccion-contenido h1,.seccion-contenido h3{
+    font-size: 1.375rem;
+    text-align:center;
+  }
+  .seccion-contenido{
+    min-height: calc(100vh - 270px); /*le resto el espacio-top y le sumo el margen top de main*/
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  .seccion3 {
+    background-position-x: -400px;
+  }
+  
+}
   
   @media (max-width: 600px) {
     /* Estilos para tablets y celulares */
-    .seccion-contenido .col1{
-      max-width: 100%;
+    header {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
     }
-    
-    .seccion-contenido .col2{
-      display:flex;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      margin-right: auto;
-      margin-left: auto;
-      position: relative;
-      padding: 1rem 4rem 1rem 4rem;
-      max-width: 100%;
-    } 
+    .col1{
+        min-width:90vw;
+      }
+    .col2{
+      min-width: 90vw;
+    }
+    main {
+      margin-top:-270px;
+    }
+    .espacio-top{
+      padding-top:270px;
+    }
+    .seccion-contenido h1,.seccion-contenido h3{
+      font-size: 1.375rem;
+      text-align:center;
+    }
+    .seccion-contenido{
+      min-height: calc(100vh - 270px); /*le resto el espacio-top y le sumo el margen top de main*/
+      padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+    .plan {
+      margin: 0.2rem 0.1rem;
+      padding: 0.3rem 0.4rem;
+      background-color: #15445580;
+      font-size: 1.5rem;
+  }
+  .seccion3 {
+    background-position-x: -400px;
+  }
+  
    }
 
   @media (max-width: 768px) {
-    /* Estilos para pcs */
-    header h1 {
-      font-size: 1.25rem;
+    /* Estilos para tablets */
+    header {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+    }
+    .col1{
+        min-width:90vw;
+      }
+    .col2{
+      min-width: 90vw;
+    }
+    main {
+      margin-top:-270px;
+    }
+    .espacio-top{
+      padding-top:270px;
+    }
+    .seccion-contenido h1,.seccion-contenido h3{
+      font-size: 1.375rem;
+      text-align:center;
+      padding: 1rem 1rem;
+    }
+    .seccion-contenido{
+      min-height: calc(100vh - 270px); /*le resto el espacio-top y le sumo el margen top de main*/
+      padding: 1rem 0.5rem 1rem 0.5rem;
     }
   }

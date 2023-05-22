@@ -33,24 +33,34 @@
         <div class="seccion-fondo seccion-fondo1"></div>
         <div class="espacio-top"></div>
           <div class="seccion-contenido">
-            <div class="formulario-contenido">
+            <div class="fila">
+              <div class="col1">
+                <img src="/img/Img_contacto.jpg"/>
+              </div>
+              <div class="col2">
+              <div class="formulario-contenido">
               <div class="form-cont-header">
                 <h2>Ingrese su consulta</h2>
               </div>
-              <div class="form-cont-cont">
-                <form id="my-form" action="https://formspree.io/f/xgebbwaq" method="POST">
-                  <label>Email:</label>
-                  <input type="email" name="email" required/>
-                  <label>Consulta:</label>
-                  <input type="text" name="message" required/>
-                  <button id="my-form-button">Enviar</button>
-                  <p id="my-form-status"></p>
-                </form>
-              </div>
+
+                  <div class="form-cont-cont">
+                    <form id="my-form" action="https://formspree.io/f/xgebbwaq" method="POST">
+                      <label>Nombre y Apellido:</label>
+                      <input type="text" name="name" required/>
+                      <label>Email:</label>
+                      <input type="email" name="email" required/>
+                      <label>Consulta:</label>
+                      <textarea name="message" cols="30" rows="6"></textarea>
+                      <button id="my-form-button">Enviar</button>
+                      <p id="my-form-status"></p>
+                    </form>
+                  </div>
+                </div>  
+              </div>    
             </div>
-            <div style="width:100%; margin:5rem 2rem 5rem 2rem;">
+            <div style="width:90vw;">
               <h2>Nuestras oficinas</h2>
-              <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Uspallata%20315O,%20Ciudad%20de%20Buenos%20Aires+(Broker%20de%20medicina%20prepaga)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+              <iframe style="width:90vw;height:max(30vh,30vw);" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Uspallata%20315O,%20Ciudad%20de%20Buenos%20Aires+(Broker%20de%20medicina%20prepaga)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                 <a href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a>
               </iframe>
             </div>
