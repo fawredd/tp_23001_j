@@ -10,7 +10,7 @@ document.getElementById("idHeader").innerHTML = `
   </div>
 <nav class="menuf2 navbar navbar-expand-lg navbar-light">
 <div class="container-fluid">
-  <a class="navbar-brand" href="#">Broker</a>
+  <img class="logo" src="img/logo.png" alt="Logo Broker"/>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
